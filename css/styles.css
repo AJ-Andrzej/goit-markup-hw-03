@@ -1,18 +1,107 @@
+/* =======COMMON STAYLES========= */
 button{
     cursor: pointer;
 }
-.link{
+
+h1,h2,h3,h4,h5,h6,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul,ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img{
+    display: block;
+}
+
+.link {
     text-decoration: none;
 }
-.list{
+
+.list {
     list-style-type: none;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container{
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
         background-color: #FFF;
         font-size: 16px;
         color: #434455;
 }
+
+.section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+h3 {
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.section-name {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+p {
+    color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+/* =======/COMMON STAYLES========= */
+
+
+/* =======HEADER STAYLES========= */
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+   column-gap: 40px; 
+}
+
 .logo{
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
@@ -21,21 +110,29 @@ body{
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 .logo-web{
     color: #2e2f42;
 }
 
+.contacts-list{
+    display: flex;
+    column-gap: 40px;
+}
 .contacts{
 font-style: normal;
 }
 
 .menu-link{
+    display: block;
     color:#2E2F42;
     /* font-size: 16px; */
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .menu-link:hover,
 .menu-link:focus{
@@ -50,9 +147,18 @@ font-style: normal;
 .contact-link:hover,
 .contact-link:focus{
     color:#404BBF;
+
 }
+
+ /* =======/HEADER STAYLES========= */
+
+ /* =======Effective Solutions========= */
+
 .top-section{
     background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    margin-bottom: 60px;
 }
 .main-titel{
     color:#FFF;
@@ -61,14 +167,22 @@ font-style: normal;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 .order-bt{
+    display: block;
     font-family: inherit;
     background-color: #4D5AE5;
     color: #FFF;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
 }
 
 .order-bt:hover,
@@ -76,40 +190,47 @@ font-style: normal;
     background-color: #404BBF;
 }
 
-h3{
-    color: #2E2F42;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
+/* =======/Effective Solutions========= */
+
+/* =======Strengths========= */
+.strenghts-list{
+    display: flex;
+    column-gap: 24px;
 }
-.section-name{
-    color:#2E2F42;
-        text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
+
+.strenghts-list-item{
+width: calc((100% - 72px) / 4);
 }
-p{
-    color: #434455;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
+
+
+.strengths-name{
+    margin-bottom: 8px;
 }
+
+/* =======/Strengths========= */
+
+/* =======Team========= */
 .team{
     background-color: #F4F4FD;
+    margin-bottom: 60px;
+    margin-top: 60px;
 }
 .team-list-item {
     text-align: center;
     background-color: #FFFFFF;
 
 }
+
+/* =======Team========= */
+
+/* =======Footer========= */
 .page-footer{
     background-color: #2E2F42;
     color: #F4F4FD;
+    margin-top: 60px;
 }
+
+
 .logo-footer{
         color: #4d5ae5;
         font-family: "Raleway", sans-serif;
@@ -125,3 +246,4 @@ p{
 .text-footer{
     color: #F4F4FD;
 }
+/* =======/Footer========= */
